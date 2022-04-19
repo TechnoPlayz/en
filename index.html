@@ -389,9 +389,22 @@ a span:nth-child(4){
 		bottom: 100%;	
 	}
 }
-	.text-box{
+	*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: -100;
+    justify-content: center;
+    height: -100vh;
+    overflow: hidden;
+    margin: 0;
+    background: #000000;
+}
+.text-box{
     position: relative;
-    width: 600px;
+    width: 500px;
     height: 300px;
     display: flex;
     justify-content: center;
@@ -413,7 +426,7 @@ a span:nth-child(4){
     top: 0;
     left: 0;
     width: 10px;
-    height: 100%;
+    height: 200%;
     border-radius: 10px;
     background: #ffffff;
     z-index: 2;
@@ -473,5 +486,4 @@ a span:nth-child(4){
         transform: translateX(0%);
     }
 }
-
 <style/>
